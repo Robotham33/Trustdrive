@@ -16,9 +16,8 @@ export default function TrustDriveVitrine() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
-      {/* Entire site layout code here */}
-      {/* ... */}
-    </div>
-  );
+  <div className="min-h-screen bg-neutral-950 text-neutral-100 antialiased flex items-center justify-center">
+    <h1 className="text-4xl font-bold">Bienvenue chez TrustDrive</h1>
+  </div>
+);
 }
