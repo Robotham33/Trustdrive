@@ -75,25 +75,25 @@ export default function TrustDriveVitrine() {
           <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg hover:shadow-2xl transition">
             <h3 className="text-xl font-semibold mb-2">Transferts aéroports</h3>
             <ul className="space-y-2 text-neutral-300">
-              <li>Orly ↔ Paris : <span className="font-medium">55 €</span></li>
-              <li>CDG ↔ Paris : <span className="font-medium">80 €</span></li>
-              <li>Beauvais ↔ Paris : <span className="font-medium">140 €</span></li>
-              <li>Aéroport ↔ Aéroport : <span className="font-medium">90 €</span></li>
+              <li>Orly ↔ Paris : <span className="font-medium">60 €</span></li>
+              <li>CDG ↔ Paris : <span className="font-medium">85 €</span></li>
+              <li>Beauvais ↔ Paris : <span className="font-medium">150 €</span></li>
+              <li>Aéroport ↔ Aéroport : <span className="font-medium">100 €</span></li>
             </ul>
           </div>
           <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg hover:shadow-2xl transition">
             <h3 className="text-xl font-semibold mb-2">Forfaits horaires</h3>
             <ul className="space-y-2 text-neutral-300">
-              <li>À l’heure (min. 2 h) : <span className="font-medium">50 €/h</span></li>
-              <li>½ journée (4 h) : <span className="font-medium">180 €</span></li>
-              <li>Journée (8 h) : <span className="font-medium">340 €</span></li>
-              <li>Soirée (17h–22h) : <span className="font-medium">200 €</span></li>
+              <li>À l’heure (min. 2 h) : <span className="font-medium">60 €/h</span></li>
+              <li>½ journée (4 h) : <span className="font-medium">200 €</span></li>
+              <li>Journée (8 h) : <span className="font-medium">400 €</span></li>
+              <li>Soirée (17h–22h) : <span className="font-medium">250 €</span></li>
             </ul>
           </div>
           <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg hover:shadow-2xl transition">
             <h3 className="text-xl font-semibold mb-2">Événements</h3>
             <ul className="space-y-2 text-neutral-300">
-              <li>Mariage / Gala (jusqu’à 6 h) : <span className="font-medium">280 €</span></li>
+              <li>Mariage / Gala (jusqu’à 6 h) : <span className="font-medium">300 €</span></li>
               <li>Attente incluse, itinéraire flexible</li>
               <li>Option véhicule décoré sur demande</li>
               <li>Devis sous 1 h (jour ouvré)</li>
