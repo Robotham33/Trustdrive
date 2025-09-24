@@ -72,7 +72,7 @@ export default function TrustDriveVitrine() {
         <p className="mt-3 text-neutral-400 max-w-2xl">TVA non applicable — art. 293 B du CGI. Facture fournie pour chaque prestation.</p>
 
         <div className="mt-10 grid md:grid-cols-3 gap-6">
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]">
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(137,0,191,0.3)]">
             <h3 className="text-xl font-semibold mb-2">Transferts aéroports</h3>
             <ul className="space-y-2 text-neutral-300">
               <li>Orly ↔ Paris : <span className="font-medium">60 €</span></li>
@@ -81,7 +81,7 @@ export default function TrustDriveVitrine() {
               <li>Aéroport ↔ Aéroport : <span className="font-medium">100 €</span></li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]">
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(137,0,191,0.3)]">
             <h3 className="text-xl font-semibold mb-2">Forfaits horaires</h3>
             <ul className="space-y-2 text-neutral-300">
               <li>À l’heure (min. 2 h) : <span className="font-medium">60 €/h</span></li>
@@ -90,7 +90,7 @@ export default function TrustDriveVitrine() {
               <li>Soirée (17h–22h) : <span className="font-medium">250 €</span></li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]">
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(137,0,191,0.3)]">
             <h3 className="text-xl font-semibold mb-2">Événements</h3>
             <ul className="space-y-2 text-neutral-300">
               <li>Mariage / Gala (jusqu’à 6 h) : <span className="font-medium">300 €</span></li>
@@ -148,7 +148,7 @@ export default function TrustDriveVitrine() {
             {t:"Ponctualité", d:"Créneaux matin et fin de journée optimisés pour Paris/IDF."},
             {t:"Écoute & flexibilité", d:"Itinéraires personnalisés, arrêts sur demande, attentes incluses selon forfait."},
           ].map((item, i)=> (
-            <div key={i} className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]">
+            <div key={i} className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(137,0,191,0.3)]">
               <h3 className="text-lg font-semibold">{item.t}</h3>
               <p className="mt-2 text-neutral-300">{item.d}</p>
             </div>
