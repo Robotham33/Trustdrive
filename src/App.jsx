@@ -139,7 +139,7 @@ export default function TrustDriveVitrine() {
       {/* Services */}
       <section id="services" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-neutral-950 via-neutral-900/50 to-neutral-950 rounded-3xl shadow-xl">
         <h2 className="text-3xl md:text-4xl font-semibold">À bord & services</h2>
-        <div className="mt-8 grid md:grid-cols-3 gap-6">
+        <div className="mt-8 grid md:grid-cols-3 gap-6 border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]">
           {[
             {t:"Tesla Model Y – 100% électrique", d:"Silencieuse, spacieuse, idéale pour trajets business et familles."},
             {t:"Accueil premium", d:"Prise en charge aéroports/hôtels avec pancarte au nom du client."},
