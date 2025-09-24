@@ -13,6 +13,9 @@ body {
   @apply bg-neutral-950 text-neutral-100 antialiased;
   font-family: 'Inter', sans-serif;
 }
+body {
+  font-family: 'Inter', sans-serif;
+}
 
 /* Liens */
 a {
