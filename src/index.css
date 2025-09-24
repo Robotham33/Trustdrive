@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Font smoothing + antialiasing */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Body style par défaut */
 body {
-  @apply antialiased bg-neutral-950 text-neutral-100;
+  @apply bg-neutral-950 text-neutral-100 antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Liens */
+a {
+  @apply transition-colors duration-200;
+}
+
+/* Boutons personnalisés */
+button {
+  @apply transition-all duration-200;
+}
+
+/* Ombres personnalisées */
+.shadow-lg {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+.shadow-xl {
+  box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
+}
+.shadow-2xl {
+  box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.7);
 }
