@@ -48,8 +48,8 @@ export default function TrustDriveVitrine() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-neutral-800/20 via-neutral-900/40 to-neutral-950" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-semibold tracking-tight leading-tight">
-              Chauffeur privé premium, <span className="text-neutral-300">disponible matin & soir</span>
+            <h1 className="text-5xl font-extrabold tracking-tight">
+              Chauffeur privé premium, <br /> disponible matin & soir
             </h1>
             <p className="mt-6 text-neutral-300 text-lg md:text-xl max-w-2xl">
               Transferts aéroports, hôtels, business et événements. Confort silencieux de la Tesla Model Y, accueil personnalisé, eau & chargeurs à bord.
