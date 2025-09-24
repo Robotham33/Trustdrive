@@ -104,7 +104,7 @@ export default function TrustDriveVitrine() {
 
       {/* Packs Entreprises */}
       <section id="entreprises" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 bg-gradient-to-b from-neutral-950 via-neutral-900/50 to-neutral-950 rounded-3xl shadow-xl">
-        <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]">
+        <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(137,0,191,0.3)]">
           <div className="md:flex items-start justify-between gap-10">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-4xl font-semibold">Packs Entreprises</h2>
