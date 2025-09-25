@@ -35,7 +35,7 @@ export default function TrustDriveVitrine() {
             <a href="#contact" className="text-neutral-300 hover:text-white">Contact</a>
           </nav>
           <div className="flex items-center gap-3">
-            <a href="https://wa.me/33666040473" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 px-4 py-2 text-white font-medium shadow transition-all">
+            <a href="https://wa.me/33666040473" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 px-2.5 py-1.5 text-white font-medium shadow transition-all sm:px-4 sm:py-2 sm:text-base sm:rounded-xl /* version tablette/desktop */ ">
               Réserver via WhatsApp
             </a>
             
