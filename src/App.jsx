@@ -175,6 +175,8 @@ export default function TrustDriveVitrine() {
               <a href="tel:+33666040473" className="px-5 py-3 rounded-2xl bg-neutral-800 border border-neutral-700 hover:bg-neutral-700">Appeler</a>
             </div>
           </div>
+          </div>
+      </section>
           {/* Carte de visite digitale */}
 <section id="wallet" className="mx-auto max-w-4xl px-6 lg:px-0 py-16">
   <div className="relative rounded-3xl bg-neutral-900/70 ring-1 ring-white/5 shadow-2xl p-8 overflow-hidden">
@@ -212,8 +214,7 @@ export default function TrustDriveVitrine() {
     </p>
   </div>
 </section>
-        </div>
-      </section>
+        
 
       {/* Footer */}
       <footer className="border-t border-neutral-900 py-10 text-sm">
