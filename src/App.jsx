@@ -97,8 +97,9 @@ export default function TrustDriveVitrine() {
           <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,255,0.3)]">
             <h3 className="text-xl font-semibold mb-2">Événements</h3>
             <ul className="space-y-2 text-neutral-300">
-              <li>Mariage / Gala (jusqu’à 6 h) : <span className="font-medium">à partir de 300 €</span></li>
-              <li>Attente incluse, itinéraire flexible</li>
+              <li>Mariage / Gala : <span className="font-medium">à partir de 300 €</span></li>
+              <li>Attente incluse (jusqu’à 6 h)</li>
+              <li>itinéraire flexible</li>
               <li>Option véhicule décoré sur demande</li>
               <li>Devis sous 1 h (jour ouvré)</li>
             </ul>
