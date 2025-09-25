@@ -175,6 +175,43 @@ export default function TrustDriveVitrine() {
               <a href="tel:+33666040473" className="px-5 py-3 rounded-2xl bg-neutral-800 border border-neutral-700 hover:bg-neutral-700">Appeler</a>
             </div>
           </div>
+          {/* Carte de visite digitale */}
+<section id="wallet" className="mx-auto max-w-4xl px-6 lg:px-0 py-16">
+  <div className="relative rounded-3xl bg-neutral-900/70 ring-1 ring-white/5 shadow-2xl p-8 overflow-hidden">
+    <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(60%_60%_at_120%_-10%,rgba(14,165,233,0.25),transparent_40%),radial-gradient(50%_50%_at_-10%_120%,rgba(34,197,94,0.25),transparent_40%)]" />
+    <h2 className="relative text-2xl md:text-3xl font-semibold tracking-tight text-white">
+      💳 Carte de visite digitale
+    </h2>
+    <p className="relative mt-3 text-neutral-300">
+      Pensez à enregistrer notre carte dans votre téléphone pour nous retrouver en 1 clic.
+    </p>
+
+    <div className="relative mt-6 flex flex-col sm:flex-row gap-4">
+      {/* Apple Wallet */}
+      <a
+        href="/cards/trustdrive.pkpass"            // <- on met le vrai fichier à l'étape 3
+        className="group flex-1 inline-flex items-center justify-center gap-3 rounded-xl bg-black/80 ring-1 ring-white/10 px-5 py-4 text-white hover:ring-white/30 hover:shadow-[0_0_0_3px_rgba(255,255,255,0.06)] transition-all"
+        download
+      >
+        <span className="text-xl"></span>
+        <span className="font-medium">Ajouter à Apple Wallet</span>
+      </a>
+
+      {/* Google Wallet */}
+      <a
+        href="/cards/save-to-google-wallet"        // <- on mettra un lien direct ou on redirigera (MVP : simple URL)
+        className="group flex-1 inline-flex items-center justify-center gap-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 px-5 py-4 text-white transition-all"
+      >
+        <span className="text-xl">🤖</span>
+        <span className="font-medium">Ajouter à Google Wallet</span>
+      </a>
+    </div>
+
+    <p className="relative mt-4 text-sm text-neutral-400">
+      La carte contient notre nom, téléphone, lien du site et un QR de rappel. Compatible iPhone & Android.
+    </p>
+  </div>
+</section>
         </div>
       </section>
 
