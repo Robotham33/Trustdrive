@@ -208,10 +208,6 @@ export default function TrustDriveVitrine() {
         <span className="font-medium">Ajouter à Google Wallet</span>
       </a>
     </div>
-
-    <p className="relative mt-4 text-sm text-neutral-400">
-      La carte contient notre nom, téléphone, lien du site et un QR de rappel. Compatible iPhone & Android.
-    </p>
   </div>
 </section>
         
