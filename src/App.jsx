@@ -85,7 +85,7 @@ export default function TrustDriveVitrine() {
               <li>Aéroport ↔ Aéroport : <span className="font-medium">100 €</span></li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]">
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,255,0.3)]">
             <h3 className="text-xl font-semibold mb-2">Forfaits horaires</h3>
             <ul className="space-y-2 text-neutral-300">
               <li>À l’heure (min. 2 h) : <span className="font-medium">60 €/h</span></li>
@@ -94,7 +94,7 @@ export default function TrustDriveVitrine() {
               <li>Soirée (17h–22h) : <span className="font-medium">250 €</span></li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(0,255,255,0.3)]">
+          <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(0,255,255,0.3)]">
             <h3 className="text-xl font-semibold mb-2">Événements</h3>
             <ul className="space-y-2 text-neutral-300">
               <li>Mariage / Gala (jusqu’à 6 h) : <span className="font-medium">300 €</span></li>
