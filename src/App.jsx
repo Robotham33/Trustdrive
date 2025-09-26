@@ -221,7 +221,7 @@ export default function TrustDriveVitrine() {
       <footer className="border-t border-neutral-900 py-10 text-sm">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-neutral-400">© {new Date().getFullYear()} TrustDrive by Hamza — Tous droits réservés</p>
-          <p className="text-neutral-500">SIRET : à venir • TVA non applicable — art. 293 B du CGI</p>
+          <p className="text-neutral-500">SIRET : 991 521 964 • TVA non applicable — art. 293 B du CGI</p>
         </div>
       </footer>
     </div>
