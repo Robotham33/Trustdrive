@@ -25,7 +25,7 @@ export default function TrustDriveVitrine() {
             </div>
             <div>
               <p className="text-lg font-semibold tracking-wide">TrustDrive <span className="text-neutral-400 text-base font-light">by Hamza</span></p>
-              <p className="text-xs text-neutral-400">Chauffeur privé — Tesla Model Y 100% électrique</p>
+              <p className="text-xs text-neutral-400">Chauffeur privé — Tesla Model 3 100% électrique</p>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -56,7 +56,7 @@ export default function TrustDriveVitrine() {
               Chauffeur privé premium, <br /> disponible matin & soir
             </h1>
             <p className="mt-6 text-neutral-300 text-lg md:text-xl max-w-2xl">
-              Transferts aéroports, hôtels, business et événements. Confort silencieux de la Tesla Model Y, accueil personnalisé, eau & chargeurs à bord.
+              Transferts aéroports, hôtels, business et événements. Confort silencieux de la Tesla Model 3, accueil personnalisé, eau & chargeurs à bord.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#tarifs" className="px-5 py-3 rounded-2xl bg-white text-neutral-900 font-medium hover:bg-neutral-200 transition">Voir les tarifs</a>
@@ -146,7 +146,7 @@ export default function TrustDriveVitrine() {
         <h2 className="text-3xl md:text-4xl font-semibold">À bord & services</h2>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
           {[
-            {t:"Tesla Model Y – 100% électrique", d:"Silencieuse, spacieuse, idéale pour trajets business et familles."},
+            {t:"Tesla Model 3 – 100% électrique", d:"Silencieuse, spacieuse, idéale pour trajets business et familles."},
             {t:"Accueil premium", d:"Prise en charge aéroports/hôtels avec pancarte au nom du client."},
             {t:"Confort & connectivité", d:"Eau, chargeurs smartphone, Wi-Fi à bord."},
             {t:"Sécurité & assurance", d:"Professionnel VTC, assurance & facturation incluses."},
