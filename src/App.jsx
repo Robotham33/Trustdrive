@@ -25,7 +25,7 @@ export default function TrustDriveVitrine() {
             </div>
             <div>
               <p className="text-lg font-semibold tracking-wide">TrustDrive <span className="text-neutral-400 text-base font-light">by Hamza</span></p>
-              <p className="text-xs text-neutral-400">Chauffeur privé — Tesla Model 3 100% électrique</p>
+              <p className="text-xs text-neutral-400">Chauffeur privé — Tesla Model 3 — 100% électrique</p>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
