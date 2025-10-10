@@ -196,7 +196,7 @@ export default function TrustDriveVitrine() {
     <div className="relative mt-6 flex flex-col sm:flex-row gap-4">
       {/* Apple Wallet */}
       <a
-        href="/cards/trustdrive.pkpass"            // <- on met le vrai fichier à l'étape 3
+        href="trustdrive.pkpass"            // <- on met le vrai fichier à l'étape 3
         className="group flex-1 inline-flex items-center justify-center gap-3 rounded-xl bg-black/80 ring-1 ring-white/10 px-5 py-4 text-white hover:ring-white/30 hover:shadow-[0_0_0_3px_rgba(255,255,255,0.06)] transition-all"
         download
       >
