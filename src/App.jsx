@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import BookingForm from "./components/BookingForm";
+
 
 export default function TrustDriveVitrine() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
@@ -32,7 +34,7 @@ export default function TrustDriveVitrine() {
             <a href="#tarifs" className="text-neutral-300 hover:text-white">Tarifs</a>
             <a href="#entreprises" className="text-neutral-300 hover:text-white">Packs Entreprises</a>
             <a href="#services" className="text-neutral-300 hover:text-white">Services</a>
-            <a href="#contact" className="text-neutral-300 hover:text-white">Contact</a>
+            <a href="#reservation" className="text-neutral-300 hover:text-white">réservation</a>
           </nav>
           <div className="flex items-center gap-3">
             <a href="https://wa.me/33666040473" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 px-2 py-1 text-white font-medium shadow transition-all sm:px-4 sm:py-2 sm:text-base sm:rounded-xl /* version tablette/desktop */ ">
@@ -161,27 +163,21 @@ export default function TrustDriveVitrine() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 bg-gradient-to-b from-neutral-950 via-neutral-900/50 to-neutral-950 rounded-3xl shadow-xl">
-        <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,255,0.3)]">
-          <h2 className="text-3xl md:text-4xl font-semibold">Contact & devis</h2>
-          <p className="mt-2 text-neutral-300">Réponse rapide par WhatsApp, téléphone ou via ce formulaire.</p>
 
-          <div className="mt-6 grid gap-4">
-            <div className="grid md:grid-cols-2 gap-4">
-              <input name="name" onChange={handleChange} value={form.name} placeholder="Nom complet" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" />
-              <input name="email" onChange={handleChange} value={form.email} placeholder="Email" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" />
-            </div>
-            <input name="phone" onChange={handleChange} value={form.phone} placeholder="Téléphone" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" />
-            <textarea name="message" onChange={handleChange} value={form.message} placeholder="Votre besoin (dates, horaires, itinéraire)" rows={5} className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 outline-none focus:ring-2 focus:ring-white/20" />
-            <div className="flex flex-wrap gap-3">
-              <button onClick={handleMailto} className="px-5 py-3 rounded-2xl bg-white text-neutral-900 font-medium hover:bg-neutral-200 transition">Envoyer la demande</button>
-              <a href="https://wa.me/33666040473" target="_blank" rel="noreferrer" className="px-5 py-3 rounded-2xl bg-emerald-500/90 hover:bg-emerald-500 text-neutral-900 font-medium">WhatsApp direct</a>
-              <a href="tel:+33666040473" className="px-5 py-3 rounded-2xl bg-neutral-800 border border-neutral-700 hover:bg-neutral-700">Appeler</a>
-            </div>
-          </div>
-          </div>
-      </section>
+{/* Réservation en ligne */}
+<section id="reservation" className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-24 bg-gradient-to-b from-neutral-950 via-neutral-900/60 to-neutral-950 rounded-3xl shadow-xl">
+  <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01] hover:shadow-[0_0_40px_rgba(0,255,255,0.3)]">
+    <h2 className="text-3xl md:text-4xl font-semibold text-center text-green-400 mb-2">
+      Réservation en ligne
+    </h2>
+    <p className="text-center text-neutral-300 mb-10">
+      Planifiez votre trajet en toute simplicité. Réponse rapide et confirmation par e-mail.
+    </p>
+    <BookingForm />
+  </div>
+</section>
+
+      
           {/* Carte de visite digitale */}
 <section id="wallet" className="mx-auto max-w-4xl px-6 lg:px-0 py-16">
   <div className="relative rounded-3xl bg-neutral-900/70 ring-1 ring-white/5 shadow-2xl p-8 overflow-hidden">
@@ -215,6 +211,8 @@ export default function TrustDriveVitrine() {
     </div>
   </div>
 </section>
+
+
         
 
       {/* Footer */}

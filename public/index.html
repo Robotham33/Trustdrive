@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Réservation VTC</title>
+</head>
+<body>
+    <h1>Réserver un VTC</h1>
+    <form id="reservationForm">
+        <input name="nom" placeholder="Nom" required>
+        <input name="prenom" placeholder="Prénom" required>
+        <input name="depart" placeholder="Départ" required>
+        <input name="arrivee" placeholder="Arrivée" required>
+        <input name="prix" placeholder="Prix" type="number" required>
+        <input name="notes" placeholder="Notes">
+        <select name="creneau" id="creneauSelect" required></select>
+        <button type="submit">Réserver</button>
+    </form>
+    <h2>Créneaux disponibles</h2>
+    <ul id="creneauxList"></ul>
+    <script>
+        async function loadCreneaux() {
+            const res = await fetch('/api/creneaux');
+            const data = await res.json();
+            const select = document.getElementById('creneauSelect');
+            select.innerHTML = '';
+            data.available.forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c;
+                select.appendChild(opt);
+            });
+            // List
+            const ul = document.getElementById('creneauxList');
+            ul.innerHTML = '';
+            data.available.forEach(c => {
+                const li = document.createElement('li');
+                li.textContent = c;
+                ul.appendChild(li);
+            });
+        }
+        loadCreneaux();
+
+        document.getElementById('reservationForm').onsubmit = async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            const data = Object.fromEntries(new FormData(form));
+            await fetch('/api/reservation', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(data)
+            });
+            alert('Réservation envoyée !');
+            loadCreneaux();
+            form.reset();
+        };
+    </script>
+</body>
+</html>
