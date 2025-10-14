@@ -27,7 +27,7 @@ const BookingForm = () => {
 
     try {
       const res = await fetch(
-        "https://musical-space-garbanzo-r4v6qx44qrj4cpx75-5000.app.github.dev/api/bookings",
+        "https://trustdrive-backend.onrender.com/api/bookings",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
