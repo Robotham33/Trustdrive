@@ -166,8 +166,8 @@ export default function TrustDriveVitrine() {
 
 {/* Réservation en ligne */}
 <section id="reservation" className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-24 bg-gradient-to-b from-neutral-950 via-neutral-900/60 to-neutral-950 rounded-3xl shadow-xl">
-  <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01] hover:shadow-[0_0_40px_rgba(0,255,255,0.3)]">
-    <h2 className="text-3xl md:text-4xl font-semibold text-center text-green-400 mb-2">
+  <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01] hover:shadow-[0_0_40px_rgba(255,223,0,0.3)]">
+    <h2 className="text-3xl md:text-4xl font-semibold text-center text-yellow-400 mb-2">
       Réservation en ligne
     </h2>
     <p className="text-center text-neutral-300 mb-10">
