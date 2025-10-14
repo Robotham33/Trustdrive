@@ -166,31 +166,15 @@ export default function TrustDriveVitrine() {
 
 {/* Réservation en ligne */}
 <section id="reservation" className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 py-24 bg-gradient-to-b from-neutral-950 via-neutral-900/60 to-neutral-950 rounded-3xl shadow-xl">
-  <div className="max-w-lg mx-auto bg-neutral-900/80 border border-neutral-800 rounded-3xl shadow-[0_0_25px_rgba(255,215,0,0.15)] p-6 sm:p-8 backdrop-blur-md">
-  <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6 text-yellow-400">
-    Réserver votre course
-  </h2>
-  <form className="space-y-4">
-    <div className="grid sm:grid-cols-2 gap-4">
-      <input type="text" placeholder="Prénom" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-      <input type="text" placeholder="Nom" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-    </div>
-    <input type="email" placeholder="Adresse e-mail" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-    <input type="tel" placeholder="Téléphone" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-    <input type="text" placeholder="Adresse de prise en charge" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-    <input type="text" placeholder="Destination" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-    <div className="grid sm:grid-cols-2 gap-4">
-      <input type="date" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-      <input type="time" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-    </div>
-    <textarea placeholder="Informations complémentaires..." rows={4} className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
-    <button type="submit" className="w-full py-3 bg-yellow-400 hover:bg-yellow-300 text-neutral-900 font-semibold rounded-2xl shadow-lg hover:shadow-yellow-400/30 transition-all">
-      Envoyer la demande
-    </button>
-  </form>
-  <BookingForm />
-</div>
-
+  <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-[1.01] hover:shadow-[0_0_40px_rgba(0,255,255,0.3)]">
+    <h2 className="text-3xl md:text-4xl font-semibold text-center text-green-400 mb-2">
+      Réservation en ligne
+    </h2>
+    <p className="text-center text-neutral-300 mb-10">
+      Planifiez votre trajet en toute simplicité. Réponse rapide et confirmation par e-mail.
+    </p>
+    <BookingForm />
+  </div>
 </section>
 
       

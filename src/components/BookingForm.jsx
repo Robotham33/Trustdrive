@@ -62,116 +62,30 @@ const BookingForm = () => {
 
   return (
     <section className="bg-black text-white py-10 px-6 md:px-20">
-      <div className="max-w-2xl mx-auto bg-zinc-900 p-8 rounded-2xl shadow-lg border border-zinc-700">
-        <h2 className="text-1xl md:text-2xl font-semibold text-center mb-6 text-green-400">
-         
-        </h2>
+      <div className="max-w-lg mx-auto bg-neutral-900/80 border border-neutral-800 rounded-3xl shadow-[0_0_25px_rgba(255,215,0,0.15)] p-6 sm:p-8 backdrop-blur-md">
+  <h2 className="text-2xl sm:text-3xl font-semibold text-center mb-6 text-yellow-400">
+    Réserver votre course
+  </h2>
+  <form className="space-y-4">
+    <div className="grid sm:grid-cols-2 gap-4">
+      <input type="text" placeholder="Prénom" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+      <input type="text" placeholder="Nom" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+    </div>
+    <input type="email" placeholder="Adresse e-mail" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+    <input type="tel" placeholder="Téléphone" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+    <input type="text" placeholder="Adresse de prise en charge" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+    <input type="text" placeholder="Destination" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+    <div className="grid sm:grid-cols-2 gap-4">
+      <input type="date" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+      <input type="time" className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+    </div>
+    <textarea placeholder="Informations complémentaires..." rows={4} className="w-full rounded-xl bg-neutral-800 border border-neutral-700 px-4 py-3 focus:ring-2 focus:ring-yellow-400/30 outline-none transition-all" />
+    <button type="submit" className="w-full py-3 bg-yellow-400 hover:bg-yellow-300 text-neutral-900 font-semibold rounded-2xl shadow-lg hover:shadow-yellow-400/30 transition-all">
+      Envoyer la demande
+    </button>
+  </form>
+</div>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="grid grid-cols-2 gap-4">
-            <input
-              name="firstName"
-              placeholder="Prénom"
-              value={formData.firstName}
-              onChange={handleChange}
-              className="p-3 rounded bg-black border border-zinc-700 text-white"
-              required
-            />
-            <input
-              name="lastName"
-              placeholder="Nom"
-              value={formData.lastName}
-              onChange={handleChange}
-              className="p-3 rounded bg-black border border-zinc-700 text-white"
-              required
-            />
-          </div>
-
-          <input
-            name="email"
-            type="email"
-            placeholder="Adresse e-mail"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-3 rounded bg-black border border-zinc-700 text-white"
-            required
-          />
-
-          <input
-            name="phone"
-            type="tel"
-            placeholder="Téléphone"
-            value={formData.phone}
-            onChange={handleChange}
-            className="w-full p-3 rounded bg-black border border-zinc-700 text-white"
-            required
-          />
-
-          <input
-            name="pickupAddress"
-            placeholder="Adresse de prise en charge"
-            value={formData.pickupAddress}
-            onChange={handleChange}
-            className="w-full p-3 rounded bg-black border border-zinc-700 text-white"
-            required
-          />
-
-          <input
-            name="dropoffAddress"
-            placeholder="Destination"
-            value={formData.dropoffAddress}
-            onChange={handleChange}
-            className="w-full p-3 rounded bg-black border border-zinc-700 text-white"
-            required
-          />
-
-          <div className="grid grid-cols-2 gap-4">
-            <input
-              name="date"
-              type="date"
-              value={formData.date}
-              onChange={handleChange}
-              className="p-3 rounded bg-black border border-zinc-700 text-white"
-              required
-            />
-            <input
-              name="time"
-              type="time"
-              value={formData.time}
-              onChange={handleChange}
-              className="p-3 rounded bg-black border border-zinc-700 text-white"
-              required
-            />
-          </div>
-
-          <textarea
-            name="note"
-            placeholder="Informations complémentaires..."
-            value={formData.note}
-            onChange={handleChange}
-            className="w-full p-3 rounded bg-black border border-zinc-700 text-white"
-            rows="3"
-          ></textarea>
-
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full py-3 rounded-xl bg-green-400 text-black font-semibold hover:bg-green-500 transition"
-          >
-            {loading ? "Envoi en cours..." : "Envoyer la demande"}
-          </button>
-        </form>
-
-        {message && (
-          <p
-            className={`mt-4 text-center ${
-              message.type === "success" ? "text-green-400" : "text-red-400"
-            }`}
-          >
-            {message.text}
-          </p>
-        )}
-      </div>
     </section>
   );
 };
