@@ -188,6 +188,7 @@ export default function TrustDriveVitrine() {
       Envoyer la demande
     </button>
   </form>
+  <BookingForm />
 </div>
 
 </section>
