@@ -175,7 +175,7 @@ export default function BookingForm() {
           <button
             type="submit"
             disabled={loading}
-            className="px-5 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-500"
+            className="px-5 py-3 rounded-2xl bg-yellow-400 hover:bg-yellow-500 text-neutral-900 disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {loading ? "Envoi..." : "Envoyer la demande"}
           </button>
