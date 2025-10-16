@@ -80,8 +80,26 @@ export default function BookingForm() {
         }
       }
 
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Erreur serveur");
+      // Diagnostic rapide
+      const contentType = res.headers.get('content-type') || '';
+      console.log('[BookingForm] Response status:', res.status, 'content-type:', contentType);
+
+      // Parse JSON if possible, otherwise read text for debugging
+      let data;
+      if (contentType.includes('application/json')) {
+        data = await res.json();
+        if (!res.ok) throw new Error(data.error || JSON.stringify(data));
+      } else {
+        const text = await res.text();
+        // Si réponse non JSON et status != OK -> afficher extrait de la page/erreur
+        if (!res.ok) {
+          const snippet = text ? text.slice(0, 300) : `Status ${res.status}`;
+          throw new Error(`Unexpected response (${res.status}): ${snippet}`);
+        }
+        // succès avec body non-json -> considérer comme réussite
+        data = { message: 'OK (non-json response)' };
+      }
+
       setMessage({
         type: "success",
         text: "Réservation enregistrée. En attente de confirmation.",
