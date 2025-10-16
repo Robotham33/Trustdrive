@@ -53,11 +53,33 @@ export default function BookingForm() {
 
     setLoading(true);
     try {
-      const res = await fetch(submitUrl, {
+      const options = {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
-      });
+      };
+
+      // Tentative principale
+      let res;
+      try {
+        console.log('[BookingForm] POST ->', submitUrl);
+        res = await fetch(submitUrl, options);
+      } catch (netErr) {
+        console.warn('[BookingForm] Primary fetch failed:', netErr);
+        // Fallback vers chemin relatif si différent (utile si proxy / forwarded ports)
+        if (submitUrl !== '/api/bookings') {
+          try {
+            console.log('[BookingForm] Retrying POST -> /api/bookings (relative)');
+            res = await fetch('/api/bookings', options);
+          } catch (fallbackErr) {
+            console.error('[BookingForm] Fallback fetch failed:', fallbackErr);
+            throw fallbackErr;
+          }
+        } else {
+          throw netErr;
+        }
+      }
+
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Erreur serveur");
       setMessage({
@@ -76,6 +98,7 @@ export default function BookingForm() {
         time: "",
       });
     } catch (err) {
+      console.error('[BookingForm] submit error:', err);
       setMessage({ type: "error", text: err.message || "Échec de l'envoi" });
     } finally {
       setLoading(false);
