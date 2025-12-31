@@ -53,7 +53,7 @@ export default function TrustDriveVitrine() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-28 relative">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-extrabold tracking-tight">
-              Chauffeur privé premium, <br /> disponible matin & soir
+              Chauffeur privé premium
             </h1>
             <p className="mt-6 text-neutral-300 text-lg md:text-xl max-w-2xl">
               Transferts aéroports, hôtels, business et événements. Confort silencieux de la Tesla Model 3, accueil personnalisé, eau & chargeurs à bord.
