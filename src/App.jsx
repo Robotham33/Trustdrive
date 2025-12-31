@@ -79,10 +79,10 @@ export default function TrustDriveVitrine() {
           <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,255,0.3)]">
             <h3 className="text-xl font-semibold mb-2">Transferts aéroports</h3>
             <ul className="space-y-2 text-neutral-300">
-              <li>Orly ↔ Paris : <span className="font-medium">60 €</span></li>
-              <li>CDG ↔ Paris : <span className="font-medium">85 €</span></li>
-              <li>Beauvais ↔ Paris : <span className="font-medium">150 €</span></li>
-              <li>Aéroport ↔ Aéroport : <span className="font-medium">100 €</span></li>
+              <li>Orly ↔ Paris : <span className="font-medium">40 €</span></li>
+              <li>CDG ↔ Paris : <span className="font-medium">50 €</span></li>
+              <li>Beauvais ↔ Paris : <span className="font-medium">110 €</span></li>
+              <li>Aéroport ↔ Aéroport : <span className="font-medium">80 €</span></li>
             </ul>
           </div>
           <div className="rounded-2xl border border-neutral-800 bg-neutral-900/70 p-6 shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(0,255,255,0.3)]">
